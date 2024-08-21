@@ -1,0 +1,819 @@
+{
+  "RootObject": {
+    "__guid": "d4702ffb-ac77-4055-bd7a-718860c3eb3d",
+    "Flags": 0,
+    "Name": "light",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Sandbox.States.StateMachineComponent",
+        "__guid": "15a7f780-6737-4822-ac24-177afddf5661",
+        "Serialized": {
+          "States": [
+            {
+              "Name": "Green",
+              "OnEnterState": {
+                "__version": 7,
+                "__guid": "8031619a-dc42-4b07-bb38-3b4069aa79ee",
+                "UserData": {
+                  "Title": "Enter",
+                  "ReferencedComponentTypes": []
+                },
+                "Variables": [],
+                "Nodes": [
+                  {
+                    "Id": 0,
+                    "Type": "input"
+                  },
+                  {
+                    "Id": 3,
+                    "Type": "property",
+                    "Properties": {
+                      "_name": "Property5",
+                      "_type": "components/lamp.comp"
+                    },
+                    "UserData": {
+                      "Position": "176,0"
+                    }
+                  },
+                  {
+                    "Id": 4,
+                    "Type": "scene.ref",
+                    "ParentId": 3,
+                    "Properties": {
+                      "component": {
+                        "_type": "component",
+                        "component_id": "558ca564-c503-45fa-b432-c9bb607062cb",
+                        "go": "d29a1609-8632-4cdf-852a-209a98d33780",
+                        "component_type": "components/lamp.comp"
+                      }
+                    }
+                  }
+                ],
+                "Links": [
+                  {
+                    "SrcId": 0,
+                    "SrcName": "_signal",
+                    "DstId": 3,
+                    "DstName": "_signal"
+                  },
+                  {
+                    "SrcId": 4,
+                    "SrcName": "_result",
+                    "DstId": 3,
+                    "DstName": "_target"
+                  },
+                  {
+                    "Value": true,
+                    "DstId": 3,
+                    "DstName": "_value"
+                  }
+                ],
+                "Defaults": {
+                  "$4.component": {
+                    "_type": "component",
+                    "component_id": "558ca564-c503-45fa-b432-c9bb607062cb",
+                    "go": "d29a1609-8632-4cdf-852a-209a98d33780",
+                    "component_type": "components/lamp.comp"
+                  }
+                }
+              },
+              "OnLeaveState": {
+                "__version": 7,
+                "__guid": "917d0003-26d4-49b1-9e58-fd39abe314f7",
+                "UserData": {
+                  "Title": "Leave",
+                  "ReferencedComponentTypes": []
+                },
+                "Variables": [],
+                "Nodes": [
+                  {
+                    "Id": 0,
+                    "Type": "input"
+                  },
+                  {
+                    "Id": 3,
+                    "Type": "property",
+                    "Properties": {
+                      "_name": "Property5",
+                      "_type": "components/lamp.comp"
+                    },
+                    "UserData": {
+                      "Position": "176,0"
+                    }
+                  },
+                  {
+                    "Id": 4,
+                    "Type": "scene.ref",
+                    "ParentId": 3,
+                    "Properties": {
+                      "component": {
+                        "_type": "component",
+                        "component_id": "558ca564-c503-45fa-b432-c9bb607062cb",
+                        "go": "d29a1609-8632-4cdf-852a-209a98d33780",
+                        "component_type": "components/lamp.comp"
+                      }
+                    }
+                  }
+                ],
+                "Links": [
+                  {
+                    "SrcId": 0,
+                    "SrcName": "_signal",
+                    "DstId": 3,
+                    "DstName": "_signal"
+                  },
+                  {
+                    "SrcId": 4,
+                    "SrcName": "_result",
+                    "DstId": 3,
+                    "DstName": "_target"
+                  },
+                  {
+                    "Value": false,
+                    "DstId": 3,
+                    "DstName": "_value"
+                  }
+                ],
+                "Defaults": {
+                  "$4.component": {
+                    "_type": "component",
+                    "component_id": "558ca564-c503-45fa-b432-c9bb607062cb",
+                    "go": "d29a1609-8632-4cdf-852a-209a98d33780",
+                    "component_type": "components/lamp.comp"
+                  }
+                }
+              },
+              "UserData": {
+                "Position": "-192,-320"
+              }
+            },
+            {
+              "Id": 1,
+              "Name": "Amber 1",
+              "OnEnterState": {
+                "__version": 7,
+                "__guid": "c4a35688-c01a-47c5-b3d3-99ffd3a5b988",
+                "UserData": {
+                  "Title": "Enter",
+                  "ReferencedComponentTypes": []
+                },
+                "Variables": [],
+                "Nodes": [
+                  {
+                    "Id": 0,
+                    "Type": "input"
+                  },
+                  {
+                    "Id": 3,
+                    "Type": "property",
+                    "Properties": {
+                      "_name": "Property5",
+                      "_type": "components/lamp.comp"
+                    },
+                    "UserData": {
+                      "Position": "176,0"
+                    }
+                  },
+                  {
+                    "Id": 4,
+                    "Type": "scene.ref",
+                    "ParentId": 3,
+                    "Properties": {
+                      "component": {
+                        "_type": "component",
+                        "component_id": "5837f87d-1893-4ee8-82b5-d3ff2c1b78fd",
+                        "go": "56e71f5c-8496-4d82-a08f-e2ef0625c7eb",
+                        "component_type": "components/lamp.comp"
+                      }
+                    }
+                  }
+                ],
+                "Links": [
+                  {
+                    "SrcId": 0,
+                    "SrcName": "_signal",
+                    "DstId": 3,
+                    "DstName": "_signal"
+                  },
+                  {
+                    "SrcId": 4,
+                    "SrcName": "_result",
+                    "DstId": 3,
+                    "DstName": "_target"
+                  },
+                  {
+                    "Value": true,
+                    "DstId": 3,
+                    "DstName": "_value"
+                  }
+                ],
+                "Defaults": {
+                  "$4.component": {
+                    "_type": "component",
+                    "component_id": "5837f87d-1893-4ee8-82b5-d3ff2c1b78fd",
+                    "go": "56e71f5c-8496-4d82-a08f-e2ef0625c7eb",
+                    "component_type": "components/lamp.comp"
+                  }
+                }
+              },
+              "OnLeaveState": {
+                "__version": 7,
+                "__guid": "01a6d9ae-2429-4d7c-aaf7-fa66f06fac1c",
+                "UserData": {
+                  "Title": "Leave",
+                  "ReferencedComponentTypes": []
+                },
+                "Variables": [],
+                "Nodes": [
+                  {
+                    "Id": 0,
+                    "Type": "input"
+                  },
+                  {
+                    "Id": 3,
+                    "Type": "property",
+                    "Properties": {
+                      "_name": "Property5",
+                      "_type": "components/lamp.comp"
+                    },
+                    "UserData": {
+                      "Position": "176,0"
+                    }
+                  },
+                  {
+                    "Id": 4,
+                    "Type": "scene.ref",
+                    "ParentId": 3,
+                    "Properties": {
+                      "component": {
+                        "_type": "component",
+                        "component_id": "5837f87d-1893-4ee8-82b5-d3ff2c1b78fd",
+                        "go": "56e71f5c-8496-4d82-a08f-e2ef0625c7eb",
+                        "component_type": "components/lamp.comp"
+                      }
+                    }
+                  }
+                ],
+                "Links": [
+                  {
+                    "SrcId": 0,
+                    "SrcName": "_signal",
+                    "DstId": 3,
+                    "DstName": "_signal"
+                  },
+                  {
+                    "SrcId": 4,
+                    "SrcName": "_result",
+                    "DstId": 3,
+                    "DstName": "_target"
+                  },
+                  {
+                    "Value": false,
+                    "DstId": 3,
+                    "DstName": "_value"
+                  }
+                ],
+                "Defaults": {
+                  "$4.component": {
+                    "_type": "component",
+                    "component_id": "5837f87d-1893-4ee8-82b5-d3ff2c1b78fd",
+                    "go": "56e71f5c-8496-4d82-a08f-e2ef0625c7eb",
+                    "component_type": "components/lamp.comp"
+                  }
+                }
+              },
+              "UserData": {
+                "Position": "128,-320"
+              }
+            },
+            {
+              "Id": 2,
+              "Name": "Red",
+              "OnEnterState": {
+                "__version": 7,
+                "__guid": "8f88789b-d224-429a-a3db-795e41bc2e7e",
+                "UserData": {
+                  "Title": "Enter",
+                  "ReferencedComponentTypes": []
+                },
+                "Variables": [],
+                "Nodes": [
+                  {
+                    "Id": 0,
+                    "Type": "input"
+                  },
+                  {
+                    "Id": 8,
+                    "Type": "property",
+                    "Properties": {
+                      "_name": "Property5",
+                      "_type": "components/lamp.comp"
+                    },
+                    "UserData": {
+                      "Position": "160,0"
+                    }
+                  },
+                  {
+                    "Id": 9,
+                    "Type": "scene.ref",
+                    "ParentId": 8,
+                    "Properties": {
+                      "component": {
+                        "_type": "component",
+                        "component_id": "f68801fa-f335-45de-850e-1e1d6df175fe",
+                        "go": "5c3e9042-726c-49a2-808b-1febf9b5bb2f",
+                        "component_type": "components/lamp.comp"
+                      }
+                    }
+                  }
+                ],
+                "Links": [
+                  {
+                    "SrcId": 0,
+                    "SrcName": "_signal",
+                    "DstId": 8,
+                    "DstName": "_signal"
+                  },
+                  {
+                    "SrcId": 9,
+                    "SrcName": "_result",
+                    "DstId": 8,
+                    "DstName": "_target"
+                  },
+                  {
+                    "Value": true,
+                    "DstId": 8,
+                    "DstName": "_value"
+                  }
+                ],
+                "Defaults": {
+                  "$9.component": {
+                    "_type": "component",
+                    "component_id": "f68801fa-f335-45de-850e-1e1d6df175fe",
+                    "go": "5c3e9042-726c-49a2-808b-1febf9b5bb2f",
+                    "component_type": "components/lamp.comp"
+                  }
+                }
+              },
+              "OnLeaveState": {
+                "__version": 7,
+                "__guid": "5b85de75-2257-420b-a075-21ecc8fd7b7b",
+                "UserData": {
+                  "Title": "Leave",
+                  "ReferencedComponentTypes": []
+                },
+                "Variables": [],
+                "Nodes": [
+                  {
+                    "Id": 0,
+                    "Type": "input"
+                  },
+                  {
+                    "Id": 8,
+                    "Type": "property",
+                    "Properties": {
+                      "_name": "Property5",
+                      "_type": "components/lamp.comp"
+                    },
+                    "UserData": {
+                      "Position": "160,0"
+                    }
+                  },
+                  {
+                    "Id": 9,
+                    "Type": "scene.ref",
+                    "ParentId": 8,
+                    "Properties": {
+                      "component": {
+                        "_type": "component",
+                        "component_id": "f68801fa-f335-45de-850e-1e1d6df175fe",
+                        "go": "5c3e9042-726c-49a2-808b-1febf9b5bb2f",
+                        "component_type": "components/lamp.comp"
+                      }
+                    }
+                  }
+                ],
+                "Links": [
+                  {
+                    "SrcId": 0,
+                    "SrcName": "_signal",
+                    "DstId": 8,
+                    "DstName": "_signal"
+                  },
+                  {
+                    "SrcId": 9,
+                    "SrcName": "_result",
+                    "DstId": 8,
+                    "DstName": "_target"
+                  },
+                  {
+                    "Value": false,
+                    "DstId": 8,
+                    "DstName": "_value"
+                  }
+                ],
+                "Defaults": {
+                  "$9.component": {
+                    "_type": "component",
+                    "component_id": "f68801fa-f335-45de-850e-1e1d6df175fe",
+                    "go": "5c3e9042-726c-49a2-808b-1febf9b5bb2f",
+                    "component_type": "components/lamp.comp"
+                  }
+                }
+              },
+              "UserData": {
+                "Position": "128,-64"
+              }
+            },
+            {
+              "Id": 5,
+              "Name": "Amber 2",
+              "OnEnterState": {
+                "__version": 7,
+                "__guid": "3a05b659-97b5-4f15-8317-81e79981c066",
+                "UserData": {
+                  "Title": "Enter",
+                  "ReferencedComponentTypes": []
+                },
+                "Variables": [],
+                "Nodes": [
+                  {
+                    "Id": 0,
+                    "Type": "input"
+                  },
+                  {
+                    "Id": 1,
+                    "Type": "property",
+                    "Properties": {
+                      "_name": "Property5",
+                      "_type": "components/lamp.comp"
+                    },
+                    "UserData": {
+                      "Position": "160,0"
+                    }
+                  },
+                  {
+                    "Id": 2,
+                    "Type": "scene.ref",
+                    "ParentId": 1,
+                    "Properties": {
+                      "component": {
+                        "_type": "component",
+                        "component_id": "5837f87d-1893-4ee8-82b5-d3ff2c1b78fd",
+                        "go": "56e71f5c-8496-4d82-a08f-e2ef0625c7eb",
+                        "component_type": "components/lamp.comp"
+                      }
+                    }
+                  }
+                ],
+                "Links": [
+                  {
+                    "SrcId": 0,
+                    "SrcName": "_signal",
+                    "DstId": 1,
+                    "DstName": "_signal"
+                  },
+                  {
+                    "SrcId": 2,
+                    "SrcName": "_result",
+                    "DstId": 1,
+                    "DstName": "_target"
+                  },
+                  {
+                    "Value": true,
+                    "DstId": 1,
+                    "DstName": "_value"
+                  }
+                ],
+                "Defaults": {
+                  "$2.component": {
+                    "_type": "component",
+                    "component_id": "5837f87d-1893-4ee8-82b5-d3ff2c1b78fd",
+                    "go": "56e71f5c-8496-4d82-a08f-e2ef0625c7eb",
+                    "component_type": "components/lamp.comp"
+                  }
+                }
+              },
+              "OnLeaveState": {
+                "__version": 7,
+                "__guid": "0f460c17-7242-44f7-9b01-4643eabb52f0",
+                "UserData": {
+                  "Title": "Leave",
+                  "ReferencedComponentTypes": []
+                },
+                "Variables": [],
+                "Nodes": [
+                  {
+                    "Id": 0,
+                    "Type": "input"
+                  },
+                  {
+                    "Id": 1,
+                    "Type": "property",
+                    "Properties": {
+                      "_name": "Property5",
+                      "_type": "components/lamp.comp"
+                    },
+                    "UserData": {
+                      "Position": "176,0"
+                    }
+                  },
+                  {
+                    "Id": 2,
+                    "Type": "scene.ref",
+                    "ParentId": 1,
+                    "Properties": {
+                      "component": {
+                        "_type": "component",
+                        "component_id": "5837f87d-1893-4ee8-82b5-d3ff2c1b78fd",
+                        "go": "56e71f5c-8496-4d82-a08f-e2ef0625c7eb",
+                        "component_type": "components/lamp.comp"
+                      }
+                    }
+                  }
+                ],
+                "Links": [
+                  {
+                    "SrcId": 0,
+                    "SrcName": "_signal",
+                    "DstId": 1,
+                    "DstName": "_signal"
+                  },
+                  {
+                    "SrcId": 2,
+                    "SrcName": "_result",
+                    "DstId": 1,
+                    "DstName": "_target"
+                  },
+                  {
+                    "Value": false,
+                    "DstId": 1,
+                    "DstName": "_value"
+                  }
+                ],
+                "Defaults": {
+                  "$2.component": {
+                    "_type": "component",
+                    "component_id": "5837f87d-1893-4ee8-82b5-d3ff2c1b78fd",
+                    "go": "56e71f5c-8496-4d82-a08f-e2ef0625c7eb",
+                    "component_type": "components/lamp.comp"
+                  }
+                }
+              },
+              "UserData": {
+                "Position": "-192,-64"
+              }
+            }
+          ],
+          "Transitions": [
+            {
+              "Id": 3,
+              "TargetId": 1,
+              "Message": "red"
+            },
+            {
+              "Id": 4,
+              "SourceId": 1,
+              "TargetId": 2,
+              "Delay": 2
+            },
+            {
+              "Id": 6,
+              "SourceId": 2,
+              "TargetId": 5,
+              "Message": "green"
+            },
+            {
+              "Id": 7,
+              "SourceId": 5,
+              "Delay": 2
+            }
+          ],
+          "InitialStateId": 2
+        }
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "0d03dfac-64ba-4959-af2f-9677e1e7f801",
+        "Flags": 0,
+        "Name": "Pole",
+        "Position": "0,0,50",
+        "Scale": "0.125,0.125,2",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "65e0af83-29c2-4d81-b123-04fcadc736d3",
+            "BodyGroups": 18446744073709551615,
+            "MaterialOverride": "materials/kenney/pavement.vmat",
+            "Model": "models/dev/box.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "f4a1f337-018b-4e33-88f7-ff89c538b9d2",
+        "Flags": 0,
+        "Name": "Top",
+        "Position": "0,0,100",
+        "Scale": "0.25,0.3125,0.75",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "dbee3c1a-5649-48b3-b69d-009d2389f28f",
+            "BodyGroups": 18446744073709551615,
+            "MaterialOverride": "materials/kenney/pavement.vmat",
+            "Model": "models/dev/box.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "__guid": "5c3e9042-726c-49a2-808b-1febf9b5bb2f",
+        "Flags": 0,
+        "Name": "Red",
+        "Position": "5,0,90",
+        "Scale": "0.125,0.125,0.125",
+        "Tags": "light_point,light",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "28d3c132-ad54-417f-a03b-975b734c28a7",
+            "BodyGroups": 18446744073709551615,
+            "MaterialOverride": "materials/lamp.vmat",
+            "Model": "models/dev/sphere.vmdl",
+            "RenderType": "On",
+            "Tint": "1,0,0,1"
+          },
+          {
+            "__type": "components/lamp.comp",
+            "__guid": "f68801fa-f335-45de-850e-1e1d6df175fe",
+            "Property1": {
+              "_type": "component",
+              "component_id": "28d3c132-ad54-417f-a03b-975b734c28a7",
+              "go": "5c3e9042-726c-49a2-808b-1febf9b5bb2f",
+              "component_type": "ModelRenderer"
+            },
+            "Property2": {
+              "_type": "component",
+              "component_id": "3db51a83-bf7a-4b21-a2ac-bc3408b84737",
+              "go": "106519a2-7e71-496e-9859-4031fbaafc47",
+              "component_type": "PointLight"
+            },
+            "Property5": false
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "106519a2-7e71-496e-9859-4031fbaafc47",
+            "Flags": 0,
+            "Name": "Point Light",
+            "Position": "20,0,0",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.PointLight",
+                "__guid": "3db51a83-bf7a-4b21-a2ac-bc3408b84737",
+                "Attenuation": 1,
+                "FogMode": "Enabled",
+                "FogStrength": 1,
+                "LightColor": "1,0,0,1",
+                "Radius": 400,
+                "Shadows": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__guid": "56e71f5c-8496-4d82-a08f-e2ef0625c7eb",
+        "Flags": 0,
+        "Name": "Amber",
+        "Position": "5,0,100",
+        "Scale": "0.125,0.125,0.125",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "1a9b2c9e-e233-48f2-870e-9139ba4dcc2c",
+            "BodyGroups": 18446744073709551615,
+            "MaterialOverride": "materials/lamp.vmat",
+            "Model": "models/dev/sphere.vmdl",
+            "RenderType": "On",
+            "Tint": "1,0.35,0,1"
+          },
+          {
+            "__type": "components/lamp.comp",
+            "__guid": "5837f87d-1893-4ee8-82b5-d3ff2c1b78fd",
+            "Property1": {
+              "_type": "component",
+              "component_id": "1a9b2c9e-e233-48f2-870e-9139ba4dcc2c",
+              "go": "56e71f5c-8496-4d82-a08f-e2ef0625c7eb",
+              "component_type": "ModelRenderer"
+            },
+            "Property2": {
+              "_type": "component",
+              "component_id": "79cbe2fe-d393-4c77-a701-092eb77a0a41",
+              "go": "2e10d843-df9b-4b5c-9130-73e206d5efb1",
+              "component_type": "PointLight"
+            },
+            "Property5": false
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "2e10d843-df9b-4b5c-9130-73e206d5efb1",
+            "Flags": 0,
+            "Name": "Point Light",
+            "Position": "20,0,0",
+            "Tags": "light_point,light",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.PointLight",
+                "__guid": "79cbe2fe-d393-4c77-a701-092eb77a0a41",
+                "Attenuation": 1,
+                "FogMode": "Enabled",
+                "FogStrength": 1,
+                "LightColor": "1,0.34902,0,1",
+                "Radius": 400,
+                "Shadows": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__guid": "d29a1609-8632-4cdf-852a-209a98d33780",
+        "Flags": 0,
+        "Name": "Green",
+        "Position": "5,0,110",
+        "Scale": "0.125,0.125,0.125",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "caa31d39-42d7-43cc-822b-6a752740df79",
+            "BodyGroups": 18446744073709551615,
+            "MaterialOverride": "materials/lamp.vmat",
+            "Model": "models/dev/sphere.vmdl",
+            "RenderType": "On",
+            "Tint": "0,1,0,1"
+          },
+          {
+            "__type": "components/lamp.comp",
+            "__guid": "558ca564-c503-45fa-b432-c9bb607062cb",
+            "Property1": {
+              "_type": "component",
+              "component_id": "caa31d39-42d7-43cc-822b-6a752740df79",
+              "go": "d29a1609-8632-4cdf-852a-209a98d33780",
+              "component_type": "ModelRenderer"
+            },
+            "Property2": {
+              "_type": "component",
+              "component_id": "62a1f96c-2f03-4fa0-9224-806d29e3b5e4",
+              "go": "ef80ec34-7e9b-4c2d-a560-3727345d8be8",
+              "component_type": "PointLight"
+            },
+            "Property5": false
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "ef80ec34-7e9b-4c2d-a560-3727345d8be8",
+            "Flags": 0,
+            "Name": "Point Light",
+            "Position": "20,0,0",
+            "Tags": "light_point,light",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "Sandbox.PointLight",
+                "__guid": "62a1f96c-2f03-4fa0-9224-806d29e3b5e4",
+                "Attenuation": 1,
+                "FogMode": "Enabled",
+                "FogStrength": 1,
+                "LightColor": "0,1,0,1",
+                "Radius": 400,
+                "Shadows": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "__variables": []
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

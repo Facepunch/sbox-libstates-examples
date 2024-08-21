@@ -1,0 +1,15 @@
+{
+  "Title": "Component Editor",
+  "Type": "library",
+  "Org": "facepunch",
+  "Ident": "compedit",
+  "Schema": 2,
+  "IncludeSourceFiles": false,
+  "Resources": null,
+  "PackageReferences": [],
+  "EditorReferences": null,
+  "IsWhitelistDisabled": false,
+  "Metadata": {
+    "CsProjName": ""
+  }
+}

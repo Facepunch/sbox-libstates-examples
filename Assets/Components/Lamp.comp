@@ -1,0 +1,308 @@
+{
+  "ClassName": "Component_e3754089",
+  "Title": "Lamp",
+  "Description": null,
+  "Group": "Custom",
+  "Icon": "tungsten",
+  "Properties": [
+    {
+      "Id": 1,
+      "Type": "Sandbox.ModelRenderer",
+      "Access": "Public",
+      "Title": "Renderer"
+    },
+    {
+      "Id": 2,
+      "Type": "Sandbox.PointLight",
+      "Access": "Public",
+      "Title": "Light"
+    },
+    {
+      "Id": 5,
+      "Type": "System.Boolean",
+      "Access": "Public",
+      "Title": "Is Lit"
+    }
+  ],
+  "Methods": [
+    {
+      "$type": "New",
+      "Id": 6,
+      "Access": "Public",
+      "Body": {
+        "__version": 7,
+        "__guid": "5c88e04f-8334-4692-bc46-f561141d3eb8",
+        "UserData": {
+          "Title": "Update Lit State",
+          "ReferencedComponentTypes": []
+        },
+        "Parameters": {
+          "DefaultSignals": true
+        },
+        "Variables": [],
+        "Nodes": [
+          {
+            "Id": 0,
+            "Type": "input"
+          },
+          {
+            "Id": 4,
+            "Type": "property",
+            "Properties": {
+              "_type": "Sandbox.Component",
+              "_name": "Enabled"
+            },
+            "UserData": {
+              "Position": "224,0"
+            }
+          },
+          {
+            "Id": 6,
+            "Type": "property",
+            "Properties": {
+              "_type": "Sandbox.ModelRenderer",
+              "_name": "MaterialOverride"
+            },
+            "UserData": {
+              "Position": "560,0"
+            }
+          },
+          {
+            "Id": 7,
+            "Type": "resource.ref",
+            "Properties": {
+              "value": "materials/lamp_off.vmat",
+              "T": "Sandbox.Material"
+            },
+            "UserData": {
+              "Position": "128,240"
+            }
+          },
+          {
+            "Id": 9,
+            "Type": "property",
+            "ParentId": 4,
+            "Properties": {
+              "_name": "Property5"
+            }
+          },
+          {
+            "Id": 10,
+            "Type": "property",
+            "ParentId": 4,
+            "Properties": {
+              "_name": "Property2"
+            }
+          },
+          {
+            "Id": 11,
+            "Type": "property",
+            "ParentId": 6,
+            "Properties": {
+              "_name": "Property1"
+            }
+          },
+          {
+            "Id": 12,
+            "Type": "op.conditional",
+            "UserData": {
+              "Position": "384,96"
+            }
+          },
+          {
+            "Id": 13,
+            "Type": "property",
+            "ParentId": 12,
+            "Properties": {
+              "_name": "Property5"
+            }
+          },
+          {
+            "Id": 15,
+            "Type": "resource.ref",
+            "Properties": {
+              "value": "materials/lamp.vmat",
+              "T": "Sandbox.Material"
+            },
+            "UserData": {
+              "Position": "96,128"
+            }
+          }
+        ],
+        "Links": [
+          {
+            "SrcId": 0,
+            "SrcName": "_signal",
+            "DstId": 4,
+            "DstName": "_signal"
+          },
+          {
+            "SrcId": 10,
+            "SrcName": "_result",
+            "DstId": 4,
+            "DstName": "_target"
+          },
+          {
+            "SrcId": 9,
+            "SrcName": "_result",
+            "DstId": 4,
+            "DstName": "_value"
+          },
+          {
+            "SrcId": 4,
+            "SrcName": "_signal",
+            "DstId": 6,
+            "DstName": "_signal"
+          },
+          {
+            "SrcId": 11,
+            "SrcName": "_result",
+            "DstId": 6,
+            "DstName": "_target"
+          },
+          {
+            "SrcId": 12,
+            "SrcName": "_result",
+            "DstId": 6,
+            "DstName": "_value"
+          },
+          {
+            "SrcId": 0,
+            "SrcName": "_target",
+            "DstId": 9,
+            "DstName": "_target"
+          },
+          {
+            "SrcId": 0,
+            "SrcName": "_target",
+            "DstId": 10,
+            "DstName": "_target"
+          },
+          {
+            "SrcId": 0,
+            "SrcName": "_target",
+            "DstId": 11,
+            "DstName": "_target"
+          },
+          {
+            "SrcId": 15,
+            "SrcName": "_result",
+            "DstId": 12,
+            "DstName": "a"
+          },
+          {
+            "SrcId": 7,
+            "SrcName": "_result",
+            "DstId": 12,
+            "DstName": "b"
+          },
+          {
+            "SrcId": 13,
+            "SrcName": "_result",
+            "DstId": 12,
+            "DstName": "x"
+          },
+          {
+            "SrcId": 0,
+            "SrcName": "_target",
+            "DstId": 13,
+            "DstName": "_target"
+          }
+        ]
+      }
+    },
+    {
+      "$type": "Override",
+      "Name": "OnEnabled",
+      "Body": {
+        "__version": 7,
+        "__guid": "5f6ced9f-c004-4875-825f-594072a5415c",
+        "UserData": {
+          "Title": "On Enabled",
+          "ReferencedComponentTypes": []
+        },
+        "Variables": [],
+        "Nodes": [
+          {
+            "Id": 0,
+            "Type": "input"
+          },
+          {
+            "Id": 1,
+            "Type": "call",
+            "Properties": {
+              "_type": "components/lamp.comp",
+              "_isStatic": false,
+              "_name": "Method6"
+            },
+            "UserData": {
+              "Position": "176,0"
+            }
+          }
+        ],
+        "Links": [
+          {
+            "SrcId": 0,
+            "SrcName": "_signal",
+            "DstId": 1,
+            "DstName": "_signal"
+          },
+          {
+            "SrcId": 0,
+            "SrcName": "_target",
+            "DstId": 1,
+            "DstName": "_target"
+          }
+        ]
+      }
+    },
+    {
+      "$type": "Override",
+      "Name": "OnUpdate",
+      "Body": {
+        "__version": 7,
+        "__guid": "bd5afd3b-519b-4d0e-9650-70448a3f5841",
+        "UserData": {
+          "Title": "On Update",
+          "ReferencedComponentTypes": []
+        },
+        "Variables": [],
+        "Nodes": [
+          {
+            "Id": 0,
+            "Type": "input"
+          },
+          {
+            "Id": 1,
+            "Type": "call",
+            "Properties": {
+              "_type": "components/lamp.comp",
+              "_isStatic": false,
+              "_name": "Method6"
+            },
+            "UserData": {
+              "Position": "160,0"
+            }
+          }
+        ],
+        "Links": [
+          {
+            "SrcId": 0,
+            "SrcName": "_signal",
+            "DstId": 1,
+            "DstName": "_signal"
+          },
+          {
+            "SrcId": 0,
+            "SrcName": "_target",
+            "DstId": 1,
+            "DstName": "_target"
+          }
+        ]
+      }
+    }
+  ],
+  "Events": [],
+  "__references": [],
+  "__version": 0
+}

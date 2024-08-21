@@ -1,0 +1,1860 @@
+{
+  "__guid": "1467cd90-1f50-4f3a-9012-3712c6962e8b",
+  "GameObjects": [
+    {
+      "__guid": "cbab8282-0550-4a1c-837a-5141c940e8da",
+      "Flags": 0,
+      "Name": "Ground",
+      "Scale": "20,20,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "a78201d7-e6bc-41ce-bd6e-af883e899b94",
+          "BodyGroups": 18446744073709551615,
+          "MaterialOverride": "materials/kenney/grass.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "c5ad33fc-783e-43cc-a4bd-718bc25fea99",
+      "Flags": 0,
+      "Name": "Sun",
+      "Position": "0,0,200",
+      "Rotation": "-0.1575591,0.5880184,0.2053349,0.7663205",
+      "Tags": "light_directional,light",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "2ba17600-3baa-439e-aede-6fe8fbb5676a",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.91373,0.98039,1,1",
+          "Shadows": true,
+          "SkyColor": "0,0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "c5e13030-5c7d-497c-b58f-f4023b89b933",
+      "Flags": 0,
+      "Name": "Camera",
+      "Position": "300,-300,600",
+      "Rotation": "-0.4266001,0.1767036,0.8194911,0.3394443",
+      "Tags": "maincamera",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "726bb07d-28d8-4a42-ad91-cb84197c6679",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 60,
+          "IsMainCamera": true,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        }
+      ]
+    },
+    {
+      "__guid": "3652b920-49fc-4e78-bb67-7bda669c158b",
+      "Flags": 0,
+      "Name": "Road",
+      "Enabled": true,
+      "Children": [
+        {
+          "__guid": "70d93cb5-5fab-47a4-a137-228f9ce69da6",
+          "Flags": 0,
+          "Name": "road_crossroadpath",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "27e1f3e4-2cb8-4b61-8287-1935aac5acac",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/kenney/road_crossroadpath.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "171ffffb-988f-419c-b713-7389a67c30e5",
+          "Flags": 0,
+          "Name": "light_curved",
+          "Position": "-200,0,0",
+          "Rotation": "0,0,0.7071068,0.7071068",
+          "Enabled": true,
+          "Children": [
+            {
+              "__guid": "b465d303-b123-443b-89d5-0b58ff0410d3",
+              "Flags": 0,
+              "Name": "light_curved",
+              "Position": "90,0,0",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "7daa0e37-b1f5-4c04-9c7b-febc41a3dc4d",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/kenney/light_curved.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "d65dd12b-0f64-48f7-8e60-da27114b4b9e",
+                  "Flags": 0,
+                  "Name": "Spot Light",
+                  "Position": "-35,-0.00002755491,130",
+                  "Rotation": "0,0.7071068,0,0.7071068",
+                  "Tags": "light_spot,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.SpotLight",
+                      "__guid": "dcad2539-b286-40e6-8510-686fd1915903",
+                      "Attenuation": 1,
+                      "ConeInner": 15,
+                      "ConeOuter": 45,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "1,0.87628,0.64651,1",
+                      "Radius": 500,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "b091938e-fc3f-4050-8c18-43de3cfea2b5",
+              "Flags": 0,
+              "Name": "light_curved",
+              "Position": "-90,0,0",
+              "Rotation": "0,0,1,-0.00000004371139",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "8adc85f3-3128-42dc-8486-9a36f949fe87",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/kenney/light_curved.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "a9584c25-a828-430f-8f89-4d34ee1fb097",
+                  "Flags": 0,
+                  "Name": "Spot Light",
+                  "Position": "-35,-0.00002755491,130",
+                  "Rotation": "0,0.7071068,0,0.7071068",
+                  "Tags": "light_spot,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.SpotLight",
+                      "__guid": "3eaeb2ee-7bc2-4528-8488-c40dc1713b52",
+                      "Attenuation": 1,
+                      "ConeInner": 15,
+                      "ConeOuter": 45,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "1,0.87628,0.64651,1",
+                      "Radius": 500,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "66629ed6-b77f-4756-aff2-d21f80eb1a7e",
+          "Flags": 0,
+          "Name": "light_curved (2)",
+          "Position": "0,-200,0",
+          "Enabled": true,
+          "Children": [
+            {
+              "__guid": "546f6567-0f95-4622-a578-1d461ad99283",
+              "Flags": 0,
+              "Name": "light_curved",
+              "Position": "90,0,0",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "144908dc-9898-4afb-848e-0ed16316f58d",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/kenney/light_curved.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "cdba796f-f117-43f7-93b8-66f2fa57be2e",
+                  "Flags": 0,
+                  "Name": "Spot Light",
+                  "Position": "-35,-0.00002755491,130",
+                  "Rotation": "0,0.7071068,0,0.7071068",
+                  "Tags": "light_spot,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.SpotLight",
+                      "__guid": "ac857b1d-bd94-45f4-8f3f-9f03157e8dcd",
+                      "Attenuation": 1,
+                      "ConeInner": 15,
+                      "ConeOuter": 45,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "1,0.87628,0.64651,1",
+                      "Radius": 500,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "f46485a0-39b6-4d70-8417-8210175c7c76",
+              "Flags": 0,
+              "Name": "light_curved",
+              "Position": "-90,0,0",
+              "Rotation": "0,0,1,-0.00000004371139",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "d05d9534-1346-4022-baa2-cfd6d68db17b",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/kenney/light_curved.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "c9976054-ac04-4b8d-b9d9-0231975fa03f",
+                  "Flags": 0,
+                  "Name": "Spot Light",
+                  "Position": "-35,-0.00002755491,130",
+                  "Rotation": "0,0.7071068,0,0.7071068",
+                  "Tags": "light_spot,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.SpotLight",
+                      "__guid": "704b0ec7-5ee3-4f2a-b6be-c5246a1e6bed",
+                      "Attenuation": 1,
+                      "ConeInner": 15,
+                      "ConeOuter": 45,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "1,0.87628,0.64651,1",
+                      "Radius": 500,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "43cff126-b214-469c-8df8-13f30544c5e3",
+          "Flags": 0,
+          "Name": "light_curved (3)",
+          "Position": "88,312,-0.000001087597",
+          "Rotation": "0,-0,-0.3826835,0.9238795",
+          "Enabled": true,
+          "Children": [
+            {
+              "__guid": "332e422f-caab-4e12-9e8b-b31fc4605c47",
+              "Flags": 0,
+              "Name": "light_curved",
+              "Position": "90,0,0",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "d8a3c623-22c6-4bf0-9025-a55f67d272c5",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/kenney/light_curved.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "04aeff6e-2091-4d61-ba09-bb09210d56ab",
+                  "Flags": 0,
+                  "Name": "Spot Light",
+                  "Position": "-35,-0.00002755491,130",
+                  "Rotation": "0,0.7071068,0,0.7071068",
+                  "Tags": "light_spot,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.SpotLight",
+                      "__guid": "c97e7487-db8e-41ae-a25c-c25cf7625b5c",
+                      "Attenuation": 1,
+                      "ConeInner": 15,
+                      "ConeOuter": 45,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "1,0.87628,0.64651,1",
+                      "Radius": 500,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "2fea837a-f348-4eff-8e71-d93b36d76504",
+              "Flags": 0,
+              "Name": "light_curved",
+              "Position": "-90,0,0",
+              "Rotation": "0,0,1,-0.00000004371139",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "abd81f78-a622-4837-b3bd-4a0139d71997",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/kenney/light_curved.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "1628c491-5481-4e7d-92b6-6891b9d15c80",
+                  "Flags": 0,
+                  "Name": "Spot Light",
+                  "Position": "-35,-0.00002755491,130",
+                  "Rotation": "0,0.7071068,0,0.7071068",
+                  "Tags": "light_spot,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.SpotLight",
+                      "__guid": "7a680335-42ae-44c7-8591-0da554e0e9e0",
+                      "Attenuation": 1,
+                      "ConeInner": 15,
+                      "ConeOuter": 45,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "1,0.87628,0.64651,1",
+                      "Radius": 500,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "4216cf57-2e69-4f30-8c8b-9e81811d3bfd",
+          "Flags": 0,
+          "Name": "light_curved (1)",
+          "Position": "200,0,0",
+          "Rotation": "0,0,0.7071068,0.7071068",
+          "Enabled": true,
+          "Children": [
+            {
+              "__guid": "d66461fe-6ab6-4f8c-9f4d-f460f3924bad",
+              "Flags": 0,
+              "Name": "light_curved",
+              "Position": "90,0,0",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "faa645d2-dcf5-4099-a0a6-a0a3225582ae",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/kenney/light_curved.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "bb0ca450-4f40-427b-aca8-e1be332679e1",
+                  "Flags": 0,
+                  "Name": "Spot Light",
+                  "Position": "-35,-0.00002755491,130",
+                  "Rotation": "0,0.7071068,0,0.7071068",
+                  "Tags": "light_spot,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.SpotLight",
+                      "__guid": "f18e08fd-7162-4e27-871b-3fd6ade410b6",
+                      "Attenuation": 1,
+                      "ConeInner": 15,
+                      "ConeOuter": 45,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "1,0.87628,0.64651,1",
+                      "Radius": 500,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "cba7022a-ad67-4fa6-820c-8507746ac6c8",
+              "Flags": 0,
+              "Name": "light_curved",
+              "Position": "-90,0,0",
+              "Rotation": "0,0,1,-0.00000004371139",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "69d578f8-a318-4e51-87fe-4967a0b9df81",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/kenney/light_curved.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "8110f223-0b4c-44ee-8a69-8906760171d0",
+                  "Flags": 0,
+                  "Name": "Spot Light",
+                  "Position": "-35,-0.00002755491,130",
+                  "Rotation": "0,0.7071068,0,0.7071068",
+                  "Tags": "light_spot,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.SpotLight",
+                      "__guid": "fc91342e-8dd6-4cb9-9a71-b87f590b83cd",
+                      "Attenuation": 1,
+                      "ConeInner": 15,
+                      "ConeOuter": 45,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "1,0.87628,0.64651,1",
+                      "Radius": 500,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "cdc0d6a3-23ea-4535-bf84-1754fdf80e01",
+          "Flags": 0,
+          "Name": "road_straight",
+          "Position": "0,-200,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "67e63639-2828-4c8d-b0f8-14e14a1a9e15",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/kenney/road_straight.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "72c183ee-7587-423f-a41e-c4bd7008bc18",
+          "Flags": 0,
+          "Name": "light_curved (6)",
+          "Position": "0,-400,0",
+          "Enabled": true,
+          "Children": [
+            {
+              "__guid": "c91099fe-14d8-42f6-956d-2c060312362f",
+              "Flags": 0,
+              "Name": "light_curved",
+              "Position": "90,0,0",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "5f9fc11a-f6a5-40e7-b8ff-14cd3549c4a5",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/kenney/light_curved.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "2d22ce39-0f8a-46b1-a74a-8285f6ec913d",
+                  "Flags": 0,
+                  "Name": "Spot Light",
+                  "Position": "-35,-0.00002755491,130",
+                  "Rotation": "0,0.7071068,0,0.7071068",
+                  "Tags": "light_spot,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.SpotLight",
+                      "__guid": "5ce7f743-da1e-4bc7-8f2c-724081c4f7ad",
+                      "Attenuation": 1,
+                      "ConeInner": 15,
+                      "ConeOuter": 45,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "1,0.87628,0.64651,1",
+                      "Radius": 500,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "ef9d4594-185a-4cc2-8c72-9871e90dea9f",
+              "Flags": 0,
+              "Name": "light_curved",
+              "Position": "-90,0,0",
+              "Rotation": "0,0,1,-0.00000004371139",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "9092ba75-0b3a-43c1-9b24-b7e9bca7a6a9",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/kenney/light_curved.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "5dc4c2bb-3c19-402c-9520-cc41d6c98a77",
+                  "Flags": 0,
+                  "Name": "Spot Light",
+                  "Position": "-35,-0.00002755491,130",
+                  "Rotation": "0,0.7071068,0,0.7071068",
+                  "Tags": "light_spot,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.SpotLight",
+                      "__guid": "226eabcc-468f-4563-a214-b12ea2a9cea2",
+                      "Attenuation": 1,
+                      "ConeInner": 15,
+                      "ConeOuter": 45,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "1,0.87628,0.64651,1",
+                      "Radius": 500,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "508cfb15-2c28-4a10-93a6-cc948ec627ea",
+          "Flags": 0,
+          "Name": "road_straight (3)",
+          "Position": "0,-400,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "748c4ca1-cff4-415c-94dd-af63dc9bb938",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/kenney/road_straight.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "ce8b62bf-a2f2-45bc-a65f-1569cf33c3ba",
+          "Flags": 0,
+          "Name": "road_straight",
+          "Position": "-200,0,0",
+          "Rotation": "0,0,0.7071068,0.7071068",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "3096c7bc-80ff-4947-b130-7372161bcc0b",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/kenney/road_straight.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "81641a86-a443-4ab8-be60-490adfee815b",
+          "Flags": 0,
+          "Name": "light_curved (5)",
+          "Position": "-400,-0.0000952214,0",
+          "Rotation": "0,0,0.7071068,0.7071068",
+          "Enabled": true,
+          "Children": [
+            {
+              "__guid": "94d1930a-7ce3-490f-8f8a-7bfc922040f8",
+              "Flags": 0,
+              "Name": "light_curved",
+              "Position": "90,0,0",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "1948610c-5eb7-4b8c-ae28-f640dfccb2eb",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/kenney/light_curved.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "e15aa51b-aca2-4f7b-a6a9-b63dc072468f",
+                  "Flags": 0,
+                  "Name": "Spot Light",
+                  "Position": "-35,-0.00002755491,130",
+                  "Rotation": "0,0.7071068,0,0.7071068",
+                  "Tags": "light_spot,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.SpotLight",
+                      "__guid": "47659f76-229f-4810-a5c7-3085a121cdfa",
+                      "Attenuation": 1,
+                      "ConeInner": 15,
+                      "ConeOuter": 45,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "1,0.87628,0.64651,1",
+                      "Radius": 500,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "1caa0237-3fc3-403c-a925-bd59acb3857b",
+              "Flags": 0,
+              "Name": "light_curved",
+              "Position": "-90,0,0",
+              "Rotation": "0,0,1,-0.00000004371139",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "778a3b2b-714d-42c7-9f17-02c92ef168c4",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/kenney/light_curved.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "95783588-76d9-47aa-aa87-a86194e81e5d",
+                  "Flags": 0,
+                  "Name": "Spot Light",
+                  "Position": "-35,-0.00002755491,130",
+                  "Rotation": "0,0.7071068,0,0.7071068",
+                  "Tags": "light_spot,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.SpotLight",
+                      "__guid": "7b5fc0bb-947b-4f31-a1e3-14737aa74c9b",
+                      "Attenuation": 1,
+                      "ConeInner": 15,
+                      "ConeOuter": 45,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "1,0.87628,0.64651,1",
+                      "Radius": 500,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "b1a99d20-79be-446d-8c94-b6f5494d0c10",
+          "Flags": 0,
+          "Name": "road_straight (2)",
+          "Position": "-400,-0.0000952214,0",
+          "Rotation": "0,0,0.7071068,0.7071068",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "42d4ca89-912a-4752-8099-ffbc56b91ce9",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/kenney/road_straight.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "5c912cec-8fda-4aa7-91ce-05039539b0c5",
+          "Flags": 0,
+          "Name": "light_curved (7)",
+          "Position": "-600,-0.0000952214,0",
+          "Rotation": "0,0,0.7071068,0.7071068",
+          "Enabled": true,
+          "Children": [
+            {
+              "__guid": "c953ae07-3d07-431c-899b-6f0a6818dbb1",
+              "Flags": 0,
+              "Name": "light_curved",
+              "Position": "90,0,0",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "e17ddeab-06df-45aa-a500-dbd7f0af74ad",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/kenney/light_curved.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "46090c8d-5517-4e81-9ea9-662115946b15",
+                  "Flags": 0,
+                  "Name": "Spot Light",
+                  "Position": "-35,-0.00002755491,130",
+                  "Rotation": "0,0.7071068,0,0.7071068",
+                  "Tags": "light_spot,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.SpotLight",
+                      "__guid": "7e34994a-48e8-4619-b2b6-71c070f4b5e2",
+                      "Attenuation": 1,
+                      "ConeInner": 15,
+                      "ConeOuter": 45,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "1,0.87628,0.64651,1",
+                      "Radius": 500,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "fbcd6c39-7756-4ebe-8998-9028ceb4397f",
+              "Flags": 0,
+              "Name": "light_curved",
+              "Position": "-90,0,0",
+              "Rotation": "0,0,1,-0.00000004371139",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "15ec6444-d444-4437-8b3b-ac37a4472524",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/kenney/light_curved.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "4f783ed9-4345-47a0-9560-26ad1c3e88e1",
+                  "Flags": 0,
+                  "Name": "Spot Light",
+                  "Position": "-35,-0.00002755491,130",
+                  "Rotation": "0,0.7071068,0,0.7071068",
+                  "Tags": "light_spot,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.SpotLight",
+                      "__guid": "a1077a13-fc2d-4cd0-ac1b-d0e49ab507c9",
+                      "Attenuation": 1,
+                      "ConeInner": 15,
+                      "ConeOuter": 45,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "1,0.87628,0.64651,1",
+                      "Radius": 500,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "3ba16546-675b-4492-ba7f-edbdee4ca5cf",
+          "Flags": 0,
+          "Name": "road_straight (4)",
+          "Position": "-600,-0.0000952214,0",
+          "Rotation": "0,0,0.7071068,0.7071068",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "74404f38-b926-4e37-b5ba-251235f23325",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/kenney/road_straight.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "c08c8022-401e-42ab-9489-cc94854b244a",
+          "Flags": 0,
+          "Name": "road_straight",
+          "Position": "200,0,0",
+          "Rotation": "0,0,0.7071068,0.7071068",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "b4c946f5-5b43-4339-af39-d59c353d8065",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/kenney/road_straight.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "1c762605-b3de-4cf0-8e8e-0412c1f7cb59",
+          "Flags": 0,
+          "Name": "light_curved (4)",
+          "Position": "400,0.00009582836,0",
+          "Rotation": "0,0,0.7071068,0.7071068",
+          "Enabled": true,
+          "Children": [
+            {
+              "__guid": "799a957c-f7f6-487c-899c-3c5f59e4cfea",
+              "Flags": 0,
+              "Name": "light_curved",
+              "Position": "90,0,0",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "0b6259f6-7996-467a-b4ad-52c34b7006fc",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/kenney/light_curved.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "40367c86-f374-46f7-95b9-8ea6e59390c2",
+                  "Flags": 0,
+                  "Name": "Spot Light",
+                  "Position": "-35,-0.00002755491,130",
+                  "Rotation": "0,0.7071068,0,0.7071068",
+                  "Tags": "light_spot,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.SpotLight",
+                      "__guid": "d8814051-a49b-4019-8a12-f3cea7e131c7",
+                      "Attenuation": 1,
+                      "ConeInner": 15,
+                      "ConeOuter": 45,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "1,0.87628,0.64651,1",
+                      "Radius": 500,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "b069e29c-0f64-412d-a598-1af5adb7833c",
+              "Flags": 0,
+              "Name": "light_curved",
+              "Position": "-90,0,0",
+              "Rotation": "0,0,1,-0.00000004371139",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "9d5585af-496c-44bf-92ad-9fad82435a6c",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/kenney/light_curved.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "9f9bef8f-d75a-4350-8d2a-f1ce9337638c",
+                  "Flags": 0,
+                  "Name": "Spot Light",
+                  "Position": "-35,-0.00002755491,130",
+                  "Rotation": "0,0.7071068,0,0.7071068",
+                  "Tags": "light_spot,light",
+                  "Enabled": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.SpotLight",
+                      "__guid": "4b76389e-b400-4df9-97ca-04bace7f0fe1",
+                      "Attenuation": 1,
+                      "ConeInner": 15,
+                      "ConeOuter": 45,
+                      "FogMode": "Enabled",
+                      "FogStrength": 1,
+                      "LightColor": "1,0.87628,0.64651,1",
+                      "Radius": 500,
+                      "Shadows": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "f141a741-e243-4319-8c75-54614447b8c7",
+          "Flags": 0,
+          "Name": "road_straight (1)",
+          "Position": "400,0.00009582836,0",
+          "Rotation": "0,0,0.7071068,0.7071068",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "ef08ed03-60a0-479e-a290-d710716b2e64",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/kenney/road_straight.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "8e70591b-c065-4169-b399-0029289ec168",
+          "Flags": 0,
+          "Name": "road_curve",
+          "Position": "100,300,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "fedc6bf5-9a12-4ac4-9928-d3246c557242",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/kenney/road_curve.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "d4877e11-c1d4-4eaa-b833-81c46b96332d",
+      "Flags": 0,
+      "Name": "Car",
+      "Position": "-300,30,-0.00002265035",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "41c00e02-807d-4ad1-9e99-a5377d0b7b5b",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/kenney/sedan.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "928735b6-132f-4ed5-8f3c-52ae9126b194",
+      "Flags": 0,
+      "Name": "Traffic Lights",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.States.StateMachineComponent",
+          "__guid": "d5af3168-b6bc-4ff9-9b35-cd56cf82815e",
+          "Serialized": {
+            "States": [
+              {
+                "Name": "North South",
+                "OnEnterState": {
+                  "__version": 7,
+                  "__guid": "222e6872-a4dc-4971-b8d4-ed83ec7e2f65",
+                  "UserData": {
+                    "Title": "Enter",
+                    "ReferencedComponentTypes": [
+                      "Sandbox.States.StateMachineComponent"
+                    ]
+                  },
+                  "Variables": [],
+                  "Nodes": [
+                    {
+                      "Id": 0,
+                      "Type": "input"
+                    },
+                    {
+                      "Id": 2,
+                      "Type": "scene.ref",
+                      "Properties": {
+                        "gameobject": {
+                          "_type": "gameobject",
+                          "go": "d4702ffb-ac77-4055-bd7a-718860c3eb3d"
+                        }
+                      },
+                      "UserData": {
+                        "Position": "0,96"
+                      }
+                    },
+                    {
+                      "Id": 3,
+                      "Type": "scene.get",
+                      "Properties": {
+                        "T": "Sandbox.States.StateMachineComponent"
+                      },
+                      "UserData": {
+                        "Position": "208,96"
+                      }
+                    },
+                    {
+                      "Id": 4,
+                      "Type": "call",
+                      "Properties": {
+                        "_name": "SendMessage",
+                        "_isStatic": false,
+                        "_type": "Sandbox.States.StateMachineComponent"
+                      },
+                      "UserData": {
+                        "Position": "560,96"
+                      }
+                    },
+                    {
+                      "Id": 11,
+                      "Type": "scene.ref",
+                      "Properties": {
+                        "gameobject": {
+                          "_type": "gameobject",
+                          "go": "64d1acbb-71e7-411d-a9a5-a2bd08af7d85"
+                        }
+                      },
+                      "UserData": {
+                        "Position": "0,192"
+                      }
+                    },
+                    {
+                      "Id": 12,
+                      "Type": "scene.get",
+                      "Properties": {
+                        "T": "Sandbox.States.StateMachineComponent"
+                      },
+                      "UserData": {
+                        "Position": "208,192"
+                      }
+                    },
+                    {
+                      "Id": 13,
+                      "Type": "call",
+                      "Properties": {
+                        "_name": "SendMessage",
+                        "_isStatic": false,
+                        "_type": "Sandbox.States.StateMachineComponent"
+                      },
+                      "UserData": {
+                        "Position": "560,192"
+                      }
+                    },
+                    {
+                      "Id": 15,
+                      "Type": "nop",
+                      "UserData": {
+                        "Position": "416,16"
+                      }
+                    }
+                  ],
+                  "Links": [
+                    {
+                      "SrcId": 2,
+                      "SrcName": "_result",
+                      "DstId": 3,
+                      "DstName": "_this"
+                    },
+                    {
+                      "SrcId": 15,
+                      "SrcName": "out",
+                      "DstId": 4,
+                      "DstName": "_signal"
+                    },
+                    {
+                      "SrcId": 3,
+                      "SrcName": "_result",
+                      "DstId": 4,
+                      "DstName": "_target"
+                    },
+                    {
+                      "Value": "green",
+                      "DstId": 4,
+                      "DstName": "message"
+                    },
+                    {
+                      "SrcId": 11,
+                      "SrcName": "_result",
+                      "DstId": 12,
+                      "DstName": "_this"
+                    },
+                    {
+                      "SrcId": 15,
+                      "SrcName": "out",
+                      "DstId": 13,
+                      "DstName": "_signal"
+                    },
+                    {
+                      "SrcId": 12,
+                      "SrcName": "_result",
+                      "DstId": 13,
+                      "DstName": "_target"
+                    },
+                    {
+                      "Value": "green",
+                      "DstId": 13,
+                      "DstName": "message"
+                    },
+                    {
+                      "SrcId": 0,
+                      "SrcName": "_signal",
+                      "DstId": 15,
+                      "DstName": "in"
+                    }
+                  ],
+                  "Defaults": {
+                    "$2.gameobject": {
+                      "_type": "gameobject",
+                      "go": "d4702ffb-ac77-4055-bd7a-718860c3eb3d"
+                    },
+                    "$11.gameobject": {
+                      "_type": "gameobject",
+                      "go": "64d1acbb-71e7-411d-a9a5-a2bd08af7d85"
+                    }
+                  }
+                },
+                "OnLeaveState": {
+                  "__version": 7,
+                  "__guid": "d10149c3-763a-4e93-80cf-a4dc2c3a5c9d",
+                  "UserData": {
+                    "Title": "Leave",
+                    "ReferencedComponentTypes": [
+                      "Sandbox.States.StateMachineComponent"
+                    ]
+                  },
+                  "Variables": [],
+                  "Nodes": [
+                    {
+                      "Id": 1,
+                      "Type": "input",
+                      "UserData": {
+                        "Position": "-96,80"
+                      }
+                    },
+                    {
+                      "Id": 2,
+                      "Type": "scene.ref",
+                      "Properties": {
+                        "gameobject": {
+                          "_type": "gameobject",
+                          "go": "d4702ffb-ac77-4055-bd7a-718860c3eb3d"
+                        }
+                      },
+                      "UserData": {
+                        "Position": "-96,176"
+                      }
+                    },
+                    {
+                      "Id": 3,
+                      "Type": "scene.get",
+                      "Properties": {
+                        "T": "Sandbox.States.StateMachineComponent"
+                      },
+                      "UserData": {
+                        "Position": "112,176"
+                      }
+                    },
+                    {
+                      "Id": 4,
+                      "Type": "call",
+                      "Properties": {
+                        "_name": "SendMessage",
+                        "_isStatic": false,
+                        "_type": "Sandbox.States.StateMachineComponent"
+                      },
+                      "UserData": {
+                        "Position": "464,176"
+                      }
+                    },
+                    {
+                      "Id": 5,
+                      "Type": "scene.ref",
+                      "Properties": {
+                        "gameobject": {
+                          "_type": "gameobject",
+                          "go": "64d1acbb-71e7-411d-a9a5-a2bd08af7d85"
+                        }
+                      },
+                      "UserData": {
+                        "Position": "-96,272"
+                      }
+                    },
+                    {
+                      "Id": 6,
+                      "Type": "scene.get",
+                      "Properties": {
+                        "T": "Sandbox.States.StateMachineComponent"
+                      },
+                      "UserData": {
+                        "Position": "112,272"
+                      }
+                    },
+                    {
+                      "Id": 7,
+                      "Type": "call",
+                      "Properties": {
+                        "_name": "SendMessage",
+                        "_isStatic": false,
+                        "_type": "Sandbox.States.StateMachineComponent"
+                      },
+                      "UserData": {
+                        "Position": "464,272"
+                      }
+                    },
+                    {
+                      "Id": 8,
+                      "Type": "nop",
+                      "UserData": {
+                        "Position": "320,96"
+                      }
+                    }
+                  ],
+                  "Links": [
+                    {
+                      "SrcId": 2,
+                      "SrcName": "_result",
+                      "DstId": 3,
+                      "DstName": "_this"
+                    },
+                    {
+                      "SrcId": 8,
+                      "SrcName": "out",
+                      "DstId": 4,
+                      "DstName": "_signal"
+                    },
+                    {
+                      "SrcId": 3,
+                      "SrcName": "_result",
+                      "DstId": 4,
+                      "DstName": "_target"
+                    },
+                    {
+                      "Value": "red",
+                      "DstId": 4,
+                      "DstName": "message"
+                    },
+                    {
+                      "SrcId": 5,
+                      "SrcName": "_result",
+                      "DstId": 6,
+                      "DstName": "_this"
+                    },
+                    {
+                      "SrcId": 8,
+                      "SrcName": "out",
+                      "DstId": 7,
+                      "DstName": "_signal"
+                    },
+                    {
+                      "SrcId": 6,
+                      "SrcName": "_result",
+                      "DstId": 7,
+                      "DstName": "_target"
+                    },
+                    {
+                      "Value": "red",
+                      "DstId": 7,
+                      "DstName": "message"
+                    },
+                    {
+                      "SrcId": 1,
+                      "SrcName": "_signal",
+                      "DstId": 8,
+                      "DstName": "in"
+                    }
+                  ],
+                  "Defaults": {
+                    "$2.gameobject": {
+                      "_type": "gameobject",
+                      "go": "d4702ffb-ac77-4055-bd7a-718860c3eb3d"
+                    },
+                    "$5.gameobject": {
+                      "_type": "gameobject",
+                      "go": "64d1acbb-71e7-411d-a9a5-a2bd08af7d85"
+                    }
+                  }
+                },
+                "UserData": {
+                  "Position": "-64,576"
+                }
+              },
+              {
+                "Id": 4,
+                "Name": "East West",
+                "OnEnterState": {
+                  "__version": 7,
+                  "__guid": "2d30a1a7-215b-4334-a02e-02f1d1b12d85",
+                  "UserData": {
+                    "Title": "Enter",
+                    "ReferencedComponentTypes": [
+                      "Sandbox.States.StateMachineComponent"
+                    ]
+                  },
+                  "Variables": [],
+                  "Nodes": [
+                    {
+                      "Id": 39,
+                      "Type": "input",
+                      "UserData": {
+                        "Position": "48,-32"
+                      }
+                    },
+                    {
+                      "Id": 41,
+                      "Type": "scene.get",
+                      "Properties": {
+                        "T": "Sandbox.States.StateMachineComponent"
+                      },
+                      "UserData": {
+                        "Position": "256,64"
+                      }
+                    },
+                    {
+                      "Id": 42,
+                      "Type": "call",
+                      "Properties": {
+                        "_name": "SendMessage",
+                        "_isStatic": false,
+                        "_type": "Sandbox.States.StateMachineComponent"
+                      },
+                      "UserData": {
+                        "Position": "608,64"
+                      }
+                    },
+                    {
+                      "Id": 44,
+                      "Type": "scene.get",
+                      "Properties": {
+                        "T": "Sandbox.States.StateMachineComponent"
+                      },
+                      "UserData": {
+                        "Position": "256,160"
+                      }
+                    },
+                    {
+                      "Id": 45,
+                      "Type": "call",
+                      "Properties": {
+                        "_name": "SendMessage",
+                        "_isStatic": false,
+                        "_type": "Sandbox.States.StateMachineComponent"
+                      },
+                      "UserData": {
+                        "Position": "608,160"
+                      }
+                    },
+                    {
+                      "Id": 46,
+                      "Type": "nop",
+                      "UserData": {
+                        "Position": "464,-16"
+                      }
+                    },
+                    {
+                      "Id": 50,
+                      "Type": "scene.ref",
+                      "Properties": {
+                        "gameobject": {
+                          "_type": "gameobject",
+                          "go": "cbb139db-412d-4596-978b-4408f1fed576"
+                        }
+                      },
+                      "UserData": {
+                        "Position": "32,64"
+                      }
+                    },
+                    {
+                      "Id": 52,
+                      "Type": "scene.ref",
+                      "Properties": {
+                        "gameobject": {
+                          "_type": "gameobject",
+                          "go": "ba08a4d4-85ff-40d8-9093-73caab65f2ec"
+                        }
+                      },
+                      "UserData": {
+                        "Position": "32,160"
+                      }
+                    }
+                  ],
+                  "Links": [
+                    {
+                      "SrcId": 50,
+                      "SrcName": "_result",
+                      "DstId": 41,
+                      "DstName": "_this"
+                    },
+                    {
+                      "SrcId": 46,
+                      "SrcName": "out",
+                      "DstId": 42,
+                      "DstName": "_signal"
+                    },
+                    {
+                      "SrcId": 41,
+                      "SrcName": "_result",
+                      "DstId": 42,
+                      "DstName": "_target"
+                    },
+                    {
+                      "Value": "green",
+                      "DstId": 42,
+                      "DstName": "message"
+                    },
+                    {
+                      "SrcId": 52,
+                      "SrcName": "_result",
+                      "DstId": 44,
+                      "DstName": "_this"
+                    },
+                    {
+                      "SrcId": 46,
+                      "SrcName": "out",
+                      "DstId": 45,
+                      "DstName": "_signal"
+                    },
+                    {
+                      "SrcId": 44,
+                      "SrcName": "_result",
+                      "DstId": 45,
+                      "DstName": "_target"
+                    },
+                    {
+                      "Value": "green",
+                      "DstId": 45,
+                      "DstName": "message"
+                    },
+                    {
+                      "SrcId": 39,
+                      "SrcName": "_signal",
+                      "DstId": 46,
+                      "DstName": "in"
+                    }
+                  ],
+                  "Defaults": {
+                    "$52.gameobject": {
+                      "_type": "gameobject",
+                      "go": "ba08a4d4-85ff-40d8-9093-73caab65f2ec"
+                    },
+                    "$50.gameobject": {
+                      "_type": "gameobject",
+                      "go": "cbb139db-412d-4596-978b-4408f1fed576"
+                    }
+                  }
+                },
+                "OnLeaveState": {
+                  "__version": 7,
+                  "__guid": "61838496-bf20-4740-9f64-e583a0470d4e",
+                  "UserData": {
+                    "Title": "Leave",
+                    "ReferencedComponentTypes": [
+                      "Sandbox.States.StateMachineComponent"
+                    ]
+                  },
+                  "Variables": [],
+                  "Nodes": [
+                    {
+                      "Id": 1,
+                      "Type": "input",
+                      "UserData": {
+                        "Position": "-80,160"
+                      }
+                    },
+                    {
+                      "Id": 2,
+                      "Type": "scene.get",
+                      "Properties": {
+                        "T": "Sandbox.States.StateMachineComponent"
+                      },
+                      "UserData": {
+                        "Position": "128,256"
+                      }
+                    },
+                    {
+                      "Id": 3,
+                      "Type": "call",
+                      "Properties": {
+                        "_name": "SendMessage",
+                        "_isStatic": false,
+                        "_type": "Sandbox.States.StateMachineComponent"
+                      },
+                      "UserData": {
+                        "Position": "480,256"
+                      }
+                    },
+                    {
+                      "Id": 4,
+                      "Type": "scene.get",
+                      "Properties": {
+                        "T": "Sandbox.States.StateMachineComponent"
+                      },
+                      "UserData": {
+                        "Position": "128,352"
+                      }
+                    },
+                    {
+                      "Id": 5,
+                      "Type": "call",
+                      "Properties": {
+                        "_name": "SendMessage",
+                        "_isStatic": false,
+                        "_type": "Sandbox.States.StateMachineComponent"
+                      },
+                      "UserData": {
+                        "Position": "480,352"
+                      }
+                    },
+                    {
+                      "Id": 6,
+                      "Type": "nop",
+                      "UserData": {
+                        "Position": "336,176"
+                      }
+                    },
+                    {
+                      "Id": 7,
+                      "Type": "scene.ref",
+                      "Properties": {
+                        "gameobject": {
+                          "_type": "gameobject",
+                          "go": "cbb139db-412d-4596-978b-4408f1fed576"
+                        }
+                      },
+                      "UserData": {
+                        "Position": "-96,256"
+                      }
+                    },
+                    {
+                      "Id": 8,
+                      "Type": "scene.ref",
+                      "Properties": {
+                        "gameobject": {
+                          "_type": "gameobject",
+                          "go": "ba08a4d4-85ff-40d8-9093-73caab65f2ec"
+                        }
+                      },
+                      "UserData": {
+                        "Position": "-96,352"
+                      }
+                    }
+                  ],
+                  "Links": [
+                    {
+                      "SrcId": 7,
+                      "SrcName": "_result",
+                      "DstId": 2,
+                      "DstName": "_this"
+                    },
+                    {
+                      "SrcId": 6,
+                      "SrcName": "out",
+                      "DstId": 3,
+                      "DstName": "_signal"
+                    },
+                    {
+                      "SrcId": 2,
+                      "SrcName": "_result",
+                      "DstId": 3,
+                      "DstName": "_target"
+                    },
+                    {
+                      "Value": "red",
+                      "DstId": 3,
+                      "DstName": "message"
+                    },
+                    {
+                      "SrcId": 8,
+                      "SrcName": "_result",
+                      "DstId": 4,
+                      "DstName": "_this"
+                    },
+                    {
+                      "SrcId": 6,
+                      "SrcName": "out",
+                      "DstId": 5,
+                      "DstName": "_signal"
+                    },
+                    {
+                      "SrcId": 4,
+                      "SrcName": "_result",
+                      "DstId": 5,
+                      "DstName": "_target"
+                    },
+                    {
+                      "Value": "red",
+                      "DstId": 5,
+                      "DstName": "message"
+                    },
+                    {
+                      "SrcId": 1,
+                      "SrcName": "_signal",
+                      "DstId": 6,
+                      "DstName": "in"
+                    }
+                  ],
+                  "Defaults": {
+                    "$7.gameobject": {
+                      "_type": "gameobject",
+                      "go": "cbb139db-412d-4596-978b-4408f1fed576"
+                    },
+                    "$8.gameobject": {
+                      "_type": "gameobject",
+                      "go": "ba08a4d4-85ff-40d8-9093-73caab65f2ec"
+                    }
+                  }
+                },
+                "UserData": {
+                  "Position": "-64,832"
+                }
+              },
+              {
+                "Id": 10,
+                "Name": "Pause 1",
+                "UserData": {
+                  "Position": "192,704"
+                }
+              },
+              {
+                "Id": 13,
+                "Name": "Pause 2",
+                "UserData": {
+                  "Position": "-320,704"
+                }
+              },
+              {
+                "Id": 16,
+                "Name": "Pedestrians",
+                "UserData": {
+                  "Position": "-384,384"
+                }
+              }
+            ],
+            "Transitions": [
+              {
+                "Id": 11,
+                "TargetId": 10,
+                "Delay": 5
+              },
+              {
+                "Id": 12,
+                "SourceId": 10,
+                "TargetId": 4,
+                "Delay": 3
+              },
+              {
+                "Id": 14,
+                "SourceId": 4,
+                "TargetId": 13,
+                "Delay": 5
+              },
+              {
+                "Id": 15,
+                "SourceId": 13,
+                "Delay": 3
+              },
+              {
+                "Id": 17,
+                "SourceId": 16,
+                "Delay": 5
+              },
+              {
+                "Id": 18,
+                "SourceId": 13,
+                "TargetId": 16,
+                "Delay": 3,
+                "Condition": {
+                  "__version": 7,
+                  "__guid": "007dc0ae-2827-4971-8c18-8a39194e911e",
+                  "UserData": {
+                    "Title": "25% Chance",
+                    "Icon": "casino",
+                    "ReferencedComponentTypes": []
+                  },
+                  "Variables": [],
+                  "Nodes": [
+                    {
+                      "Id": 0,
+                      "Type": "input"
+                    },
+                    {
+                      "Id": 1,
+                      "Type": "output",
+                      "UserData": {
+                        "Position": "256,0"
+                      }
+                    },
+                    {
+                      "Id": 2,
+                      "Type": "random.chance",
+                      "UserData": {
+                        "Position": "-32,80"
+                      }
+                    }
+                  ],
+                  "Links": [
+                    {
+                      "SrcId": 2,
+                      "SrcName": "_result",
+                      "DstId": 1,
+                      "DstName": "_result"
+                    },
+                    {
+                      "SrcId": 0,
+                      "SrcName": "_signal",
+                      "DstId": 1,
+                      "DstName": "_signal"
+                    },
+                    {
+                      "Value": 0.25,
+                      "DstId": 2,
+                      "DstName": "probability"
+                    }
+                  ]
+                }
+              }
+            ],
+            "InitialStateId": 0
+          }
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "cbb139db-412d-4596-978b-4408f1fed576",
+          "Flags": 0,
+          "Name": "East Light",
+          "Position": "-90,90,0",
+          "Rotation": "0,-0,-0.7071068,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefabs/light.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "ba08a4d4-85ff-40d8-9093-73caab65f2ec",
+          "Flags": 0,
+          "Name": "West Light",
+          "Position": "90,-90,0",
+          "Rotation": "0,0,0.7071068,0.7071068",
+          "Enabled": true,
+          "__Prefab": "prefabs/light.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "64d1acbb-71e7-411d-a9a5-a2bd08af7d85",
+          "Flags": 0,
+          "Name": "South Light",
+          "Position": "90,90,0",
+          "Rotation": "0,0,1,-0.00000004371139",
+          "Enabled": true,
+          "__Prefab": "prefabs/light.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "d4702ffb-ac77-4055-bd7a-718860c3eb3d",
+          "Flags": 0,
+          "Name": "North Light",
+          "Position": "-90,-90,0",
+          "Enabled": true,
+          "__Prefab": "prefabs/light.prefab",
+          "__PrefabVariables": {}
+        }
+      ]
+    },
+    {
+      "__guid": "69273af3-f29f-4327-b90c-016d5dec64eb",
+      "Flags": 0,
+      "Name": "GameObject",
+      "Enabled": true
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "NetworkInterpolation": true,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "trafficlight",
+  "Description": "",
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}
